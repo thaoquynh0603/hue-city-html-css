@@ -1,0 +1,734 @@
+/*  Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.column{
+    float: left;
+    padding: 8px 8px;
+}
+
+.column-three{
+    width: calc(100%/3);
+}
+.column-half{
+    width: 50%;
+    /* display:inline-block; */
+}
+
+.column-full{
+    width: 100%;
+}
+
+.go-black{
+    background-color: black;
+}
+
+/* 
+1. Position
+2. Size
+3. Font
+5. Shape/ Style */
+
+.clear{
+    clear:both;
+}
+
+#main  {
+    position: relative;
+}
+
+#header {
+    height: 50px;
+    background-color: rgba(49, 49, 49, 0.37);
+    position: fixed;
+    z-index: 100;
+    /* width: 100%; */
+    top:0;
+    left:0;
+    right:0;
+    
+}
+
+/* START HEADER NAV */
+
+#nav > li {
+    display: inline-block; 
+}
+
+#nav {
+    display: inline-block;
+      
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav li:hover .other{
+    display: block;
+}
+
+#nav > li > a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+#nav > li > a:hover{
+    background-color: white;
+    color: black;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    /* display: inline-block;  */
+}
+
+
+
+#nav .other {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    box-shadow: -0px 0px 20px  rgba(22, 22, 22, 0.158);
+    display: none;
+    min-width: 200px;
+    top: 100%;
+    left: 0
+}
+
+#nav .other li a {
+    color:rgba(0, 0, 0, 0.39);
+    text-transform: none;
+    /* padding-right: 70px;  */
+    padding-left: 15px; 
+    line-height: 40px;
+    font-size: 16px;
+}
+
+#nav .other .liother a:hover{
+    color:rgb(0, 0, 0);
+    /* display: block;  */
+}
+
+/* END HEADER NAV */
+
+/* START HEADER SEARCH */
+
+#header-search {
+    float: right;
+    line-height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgb(49, 49, 49);
+}
+
+#header-search:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+#header-search .search-button{
+    color: white;
+    font-weight: 30px;
+}
+
+/* END HEADER SEARCH */
+
+/* START THE SLIDER */
+#slider {
+    /* position: relative; */
+    padding-top: 35%;
+    /* nếu giá trị phần trăm, tỉ lệ theo chiều ngang của chính nó */
+    background-color: rgb(241, 184, 184) ;
+    background: url('/assets/img/slider.jpg') center/ cover no-repeat ;
+}
+
+#slider .text-content{
+    position: relative;
+    /* text-align: center; */
+    /* Cách căn giữa */
+    width: 300px;
+    left: 30%;
+    bottom: 400px;
+    transform: translateX(-30%); 
+    /* width: 70%; */
+    /* background-color: rgba(0, 0, 0, 0.438); */
+    border-radius: 10px;
+    /* left:0;
+    Right:0; */
+}
+
+#slider .text-content .text-heading{
+    font-size: 30px;
+    padding-bottom: 0px;
+    /* text-shadow: 0px 0px 20px rgba(92, 88, 88, 0.6); */
+    color:rgb(40, 40, 40);
+    display: block;
+    text-align: center;
+    /* width: 60%; */
+}
+
+#slider .text-content .text-description{
+    font-size: 20px;
+    /* background-color: rgba(255, 99, 71, 0.397); */
+    padding-bottom: 15px;
+    color:rgb(40,40,40);
+    /* position: absolute; */
+    /* left: px; */
+    /* transform: translateX(-50%); */
+    /* text-transform: capitalize; */
+    text-align: center;
+    /* text-shadow: 0px 0px 20px rgb(255, 255, 255); */
+    /* padding-top: 3px; */
+}
+
+/* END THE SLIDER */
+
+/*START THE CONTENT*/
+
+#content {
+
+}
+
+/* START THE ABOUT SECTION */
+.section-content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 0px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 8px;
+}
+
+#content .section-heading{
+    /* padding: 20px; */
+    font-size: 100px;
+    /* font-weight: 2000; */
+    height: 95px;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    /* position: absolute; */
+    margin-bottom: 70px;
+    font-size: 30px; 
+    letter-spacing: 1px;
+    font-style: italic;
+    color:rgb(146, 146, 146)
+}
+
+#content .section-content #about{
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 16px;
+
+}
+
+
+#content .image-item{
+    /* position: absolute; */
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 18px;
+    
+    /* width: 100px; */
+    /* height: 100px; */
+    /* padding: 0px 25px; */
+    
+}
+
+#content .image{
+    /* float: left; */
+    /* position: absolute; */
+    padding: 20px 0px;
+    /* overflow: hidden; */
+    /* float: left; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+#content .image::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#content .image img{
+    width: 220px;
+    height: 180px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#content .image .image-text{
+    /* text-align: center; */
+    padding: 15px 0px;
+    
+}
+
+/* END THE ABOUT SECTION */
+
+/* START THE DESTINATION SECTION */
+#content .contain-section-destination{
+    background-color: rgb(0, 0, 0);
+    /* padding-bottom: 0.5 */
+}
+
+.text-white{
+    color: rgb(255, 255, 255) !important
+}
+
+.sub-text-white{
+    color: rgba(255, 255, 255, 0.466) !important
+}
+
+.section-heading-2{
+    font-size: 40px;
+}
+
+.section-sub-heading-2{
+    font-size: 18px;
+    /* color:rgb(238, 5, 5); */
+    font-style: italic;
+    
+}
+
+.list{
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    width: 800px;
+    /* left: 100px; */
+    /* transform: translateX(100px); */
+}
+
+.list li{
+    font-size: 15px;
+    padding: 15px 20px;
+    border-bottom: 1px dashed rgb(179, 179, 179);
+    text-align: left;
+}
+
+.list .sold-out{
+    color: white;
+    background-color: rgb(184, 75, 75);
+    padding: 6px;
+    border-radius: 3px;
+    vertical-align: center;
+    /* margin-left: 75%; */
+    /* margin-left: 40px; */
+    float: right;
+    margin-top: -5px;
+    /* text-align: right; */
+}
+
+.list .quantity{
+    color: rgb(255, 255, 255);
+    padding: 5px 7.5px;
+    background-color: green;
+    float: right;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-top: -4px;
+}
+
+/* places */
+
+.place-list{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.place-item{
+    /* float: left; */
+    width: 33.33%;
+    /* padding: 0 8px; */
+    background-clip: content-box;
+
+}
+.place-img{
+    object-fit: contain;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    
+}
+
+.place-img:hover{
+    opacity: 0.9;
+}
+.place-content{
+    background-color: white;
+    padding: 25px 25px 30px 25px;
+    min-height: 400px;
+    position: relative;
+    z-index: 0;
+}
+
+.place-heading{
+    padding: 0px 0px 15px 0px;
+    font-size: 20px;
+}
+.place-description{
+    padding-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.place-min-price{
+    padding-bottom: 30px;
+    font-style: italic;
+    font-size: 16px;
+    text-align: left;
+    opacity: 0.6;
+}
+.place-button{
+    position: absolute;
+    padding: 10px 20px;
+    background-color: black; 
+    color: white;
+    text-transform: none;
+    border-radius: 5px;
+    text-decoration: none;
+    bottom: 30px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    border: none;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* background-clip: content-box; */
+}
+
+.place-button:hover{
+    background-color: rgb(65, 65, 65); 
+    /* background-clip: content-box; */
+}
+/* END THE DESTINATION SECTION */
+
+
+
+/* CREATE MODEL */
+.modal {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 700px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    position: relative;
+    animation: modal-in ease 0.8s;
+   
+}
+
+.modal-heading{
+    background-color: purple;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+.modal-heading i{
+    padding: 10px;
+}
+
+.modal-close{
+    position: absolute;
+    padding: 12px;
+    top: 0;
+    right: 0;
+    color: white;
+    cursor:pointer;
+    opacity: 0.6;
+}
+
+.modal-close:hover{
+    position: absolute;
+    padding: 12px;
+    top: 0;
+    right: 0;
+    color: white;
+    cursor:pointer;
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 30px 30px 10px 30px;
+}
+
+.model-label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.modal-input{
+    border: 1px solid #999;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+#modal-pay{
+    display: block;
+    width: 30%;
+    height: 40px;
+    background-color: purple;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer
+}
+
+#modal-pay:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.modal-footer .modal-help-link{
+    color: purple;
+}
+
+@keyframes modal-in {
+    from {
+        opacity: 0;
+        transform: translateY(-150px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+/* END MODEL */
+
+/* START CONTACT FORM */
+.contact-content{
+    padding: 60px 0px 20px 0px;
+    line-height: 1.6;
+}
+
+.contact-content p{
+    text-align: left;
+    font-size: 17px;;
+}
+
+.contact-content i[class*="ti-"]{
+    width: 20px;
+    padding: 5px;
+}
+
+form .column{
+    /* padding: 8px; */
+    padding-bottom: 16px;
+}
+.form-control{
+    /* margin-bottom: 6px; */
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 8px solid;
+    display: block;
+}
+
+.contact-button{
+    padding: 5px;
+    min-width: 100px;
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-button:hover{
+    opacity: 0.8;
+}
+
+/*ACTIVITY SECTION*/
+.activity-img{
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    vertical-align: middle;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    float:inline-start;
+}
+
+.horizon-content{
+    height: 150px;
+    display: block;
+    margin: 20px -8px; 
+}
+
+.activity-main{
+    margin-top: 50px;
+}
+
+.activity-content{
+    text-align: left;
+    /* padding-left: 10px; */
+    padding: 10px;
+    display: block;
+}
+
+.activity-description{
+    padding-top: 18px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* FOOD SECTION */
+.food{
+    position: relative;
+    padding-bottom: 30px;
+}
+.food-list{
+    margin-top: 80px;
+}
+.food-image{
+    object-fit: cover;
+    width: 230px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+}
+
+.food-name-overlay {
+    position: absolute;
+    margin-top: 8px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 230px;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000a2;
+    border-radius: 10px;
+    margin-left: 8px;    
+  }
+  
+.food:hover .food-name-overlay {
+    opacity: 1;
+  }
+
+.food-name-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 180px;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* START MAP SECTION */
+
+.map-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/* END CONTACT FORM */
+#footer {
+    padding: 40px;
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color:rgb(65, 65, 65);
+    font-size: 25px;
+}
+
+#footer a:hover{
+    opacity: 0.5;
+}
+
+#footer .copyright{
+    font-size: 16px;
+    padding: 15px;
+    /* font-style: italic; */
+}
+
+#footer .content-source{
+    font-size: 16px;
+    /* padding: 15px; */
+    font-style: italic;
+}
+
+#footer .content-source-link{
+    font-size: 16px;
+    padding: 15px;
+    color:gray;
+    font-style: italic;
+}
+

@@ -1,0 +1,257 @@
+<!-- Basic elements of a website:
+    - Header
+    - Navigation 
+    - Breadcrumb 
+    - Sidebar 
+    - Slider
+    - Footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hue</title>
+    <link rel="icon" href="/assets/icon/page-icon.png" type="image/x-icon" />
+    <link rel='stylesheet' href='/assets/css/style.css'> 
+    <link rel='stylesheet' href='assets/icon/themify-icons/themify-icons.css'>
+</head>
+
+
+<body>
+    <div id="main">
+
+        <div id="slider">
+            <div class="text-content">
+                 <h1 class="text-heading"> The Imperial City </h1>
+                 <div class="text-description"> Stamp of History </div>
+             </div>
+         </div>
+
+        <div id="header">
+            <!-- Begin Navigation -->
+            <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="">Activity</a></li>
+                <li>
+                    <a href="">Other
+                        <i class='hav-arrow-down ti-angle-down' style="font-size:14px"></i>
+                    </a>
+                    <ul class="other">
+                        <li class = 'liother'><a href="">Accomodation</a></li>
+                        <li class = 'liother'><a href="">Food</a></li>
+                        <li class = 'liother'><a href="">Market</a></li>
+                    </ul>    
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- End Navigation -->
+
+            <!-- Begin Search -->
+            <div id='header-search'>
+                <i class='search-button ti-search'></i>
+            </div>
+            <!-- End Search-->
+
+        </div>
+        
+        
+
+        <div id="content">
+            <!-- About introduction -->
+            <div class="section-content" id="home">
+                <h2 class='section-heading'> HUE </h2>
+                <p class='section-sub-heading'> Breath of Heritage</p>
+                <p id='about'>Despite the fast-paced urbanization and cultural assimilation that are raging on in other parts of this Southeast Asian nation, best described as old Vietnam writ large, Hue, as a former capital of Vietnam, takes pride in its long history, atmospheric temples, sublime royal palaces and unique cultural traits that can hardly be found elsewhere in Vietnam. Besides exotic elements of the Imperial City, a walled enclosure within the citadel, Hue is extremely well-known for its cultural heritage elements recognized by UNESCO, one of which is Nhã Nhạc (Vietnamese court music).</p>
+            <!-- Source: https://www.vietnamonline.com/destination/hue.html -->
+                <div class="image">
+                    <div class="image-item">
+                        <p class="image-text"> Savory but Elegant Cuisine</p>
+                        <img src="/assets/img/about/food.jpg" alt="Food" class="scene-img">
+                        <!-- <img src="/assets/img/about/destination.jpg" alt="Attraction" class="scene-img">
+                        <img src="/assets/img/about/activity.jpg" alt="Activity" class="scene-img"> -->
+                    </div>
+                    <div class="image-item">
+                        <p class="image-text"> Ancient and Peaceful Destination</p>
+                        <img src="/assets/img/about/destination.jpg" alt="Destination" class="scene-img">
+                    </div>
+                    <div class="image-item">
+                        <p class="image-text"> Unique Traditional Activity</p>
+                        <img src="/assets/img/about/activity.jpg" alt="Activity" class="scene-img">
+                    </div>
+                    <!-- <div class="clear"></div> -->
+                </div>
+                
+            </div>
+        
+            <!--Destination-->
+            <div class="contain-section-destination" id="destination">
+                <div class="section-content">
+                    <h2 class='section-heading-2 text-white'> Destination </h2>
+                    <p class='section-sub-heading-2 sub-text-white'> Must-go places in Hue City</p>
+                    <!-- List -->
+                    <ul class="list">
+                        <li>September <span class="sold-out"> Sold Out</span></li>
+                        <li>September <span class="sold-out"> Sold Out</span></li>
+                        <li>September <span class="quantity"> N </span></li>
+                    </ul>
+                    <!-- Place -->
+                    <div class="row place-list">
+                        <div class="column place-item">
+                            <img src="/assets/img/destination/place-1.jpg" alt="Hue Imperial City" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading"> Hue Imperial City </h3>
+                                <p class="place-description"> Hue Imperial City, set along the northern bank of the Perfume River, features hundreds of monuments dating back to early 19th century, including the Forbidden Purple City, royal tombs, pagodas, temples, royal quarters, a library and museum </p>
+                                <p class="place-min-price"> The ticket price starts from 6.6 USD/ Person</p>
+                                <button class="place-button js-details"> More Details </button>
+                            </div>
+                        </div>
+                        <div class="column place-item">
+                            <img src="/assets/img/destination/place-2.jpg" alt="Hue Imperial City" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading"> Thien Mu Pagoda </h3>
+                                <p class="place-description"> Thien Mu Pagoda is set atop a hill just outside Hue City Centre, offering breathtaking views of Perfume River and Hue Imperial City. One of its standout features is a 21 metre-tall octagonal tower called Thap Phuoc Duyen, which was built in 1844 under the reign of Emperor Thieu Tri. </p>
+                                <p class="place-min-price"> Free Entrance</p>
+                                <button class="place-button js-details"> More Details </button>
+                            </div>
+                        </div>
+                        <div class="column place-item">
+                            <img src="/assets/img/destination/place-3.jpg" alt="Hue Imperial City" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading"> Tu Duc Tomb </h3>
+                                <p class="place-description">  Home to a massive lake and over 50 palaces, pavilions, temples and shrines, the Tu Duc Tomb offers relaxing ambience for visitors looking to experience the remnants of ancient Nguyen Dynasty. </p>
+                                <p class="place-min-price"> The ticket price starts from 5 USD/ An adult</p>
+                                <button class="place-button js-details"> More Details </button>
+                            </div>
+                        </div>
+                        <!-- Source: http://www.vietnam-guide.com/hue/top10/best-hue-attractions.htm -->
+                        <!-- <div class="clear"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-content" id="contact">
+                <h2 class='section-heading-2'> Contact </h2>
+                <p class='section-sub-heading-2'> Get in touch with Hue City </p>
+                <div class="row contact-content">
+                    <div class="column column-half">
+                        <p><i class="ti-location-pin"></i>Vietnam</p>
+                        <p><i class="ti-location-pin"></i>Vietnam</p>
+                        <p><i class="ti-location-pin"></i>Vietnam</p>
+                    </div>
+
+                    <div class="column column-half">
+                        <form action="">
+                            <div class="row">
+                                <div class="column column-half">
+                                    <input type="text" class='form-control' required placeholder="Name" name="" id="">
+                                </div>
+                                <div class="column column-half">
+                                    <input type="email" class='form-control' required placeholder="Email" name="" id=""> 
+                                </div>
+                               
+                            </div>
+
+
+
+                            <div class="row">    
+                                <div class="column column-full">
+                                    <input type="text" class='form-control' required placeholder="Message" name="" id="">
+                                </div>
+                            </div>    
+                            <input type="submit" value="Send" class="contact-button">  
+                        </form>  
+                    </div>
+                    
+                
+            </div>   
+        </div>
+
+        <div class="map">
+            <img src="/assets/img/map/map.jpg.crdownload" alt="map" class="map-image">
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-heading">
+                    <i class="ti-bag">  </i>
+                    Tickets
+                </header>
+                <div class="modal-body">
+                    <label for="quantity" class="model-label">
+                        <i class="ti-shopping-cart"> </i>
+                        Tickets 
+                    </label>
+                    <input  type="text" id='quantity' class="modal-input" placeholder="How many">
+
+                    <label for="modal-email" class="model-label">
+                        <i class="ti-user">  </i>
+                        Email
+                    </label>
+                    <input type="text" id='modal-email' class="modal-input" placeholder="Enter email">
+
+                    <button id="modal-pay">
+                        Pay
+                        <i class="ti-check">  </i>
+                    </button>
+                </div>
+                <footer class="modal-footer">
+                    <p class="modal-help"> Need <a href="#" class="modal-help-link">help?</a></p>
+                </footer>
+            </div>
+        </div>
+
+
+        <script>
+            const moredetails = document.querySelectorAll('.js-details')
+
+            const modal = document.querySelector('.js-modal')
+            
+            const modalContainer = document.querySelector('.js-modal-container')
+
+            const modalClose = document.querySelector('.js-modal-close')
+
+            function showDetails(){
+                modal.classList.add('open')
+            }   
+
+            
+            function hideDetails(){
+                modal.classList.remove('open')
+            }
+
+            for (const details of moredetails) {
+                details.addEventListener('click', showDetails)
+            }
+
+        
+            modalClose.addEventListener('click', hideDetails)
+
+            modal.addEventListener('click', hideDetails)
+
+            modalContainer.addEventListener('click', function (event) {event.stopPropagation()})
+
+        </script>
+            
+        <div id="footer">
+            <div class="social-icon">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright"> Created by Quynh Nguyen, February 2022</p>
+            <p class="content-source"> Content Source
+                <a href="https://www.vietnamonline.com/destination/hue.html" target="_blank" class="content-source-link">Vietnamonline</a>
+                <a href="http://www.vietnam-guide.com/hue/top10/best-hue-attractions.htm" target="_blank" class="content-source-link"> Vietnam Guide</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
