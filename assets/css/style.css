@@ -65,6 +65,7 @@ html {
     top:0;
     left:0;
     right:0;
+   
     
 }
 
@@ -104,39 +105,31 @@ html {
     color: black;
 }
 
-#nav li a{
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-transform: uppercase;
-    /* display: inline-block;  */
-}
 
-
-
-#nav .other {
+#nav li .other {
     position: absolute;
     background-color: rgb(255, 255, 255);
     list-style-type: none;
     box-shadow: -0px 0px 20px  rgba(22, 22, 22, 0.158);
     display: none;
-    min-width: 200px;
+    min-width: 150px;
     top: 100%;
     left: 0
 }
 
-#nav .other li a {
-    color:rgba(0, 0, 0, 0.39);
+#nav li .other a{
+    color:rgba(71, 71, 71, 0.733);
     text-transform: none;
     /* padding-right: 70px;  */
-    padding-left: 15px; 
+    padding-left: 20px; 
     line-height: 40px;
     font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
 }
 
-#nav .other .liother a:hover{
+#nav .other a:hover{
     color:rgb(0, 0, 0);
     /* display: block;  */
 }
@@ -153,6 +146,7 @@ html {
     background-color: rgb(49, 49, 49);
 }
 
+
 #header-search:hover{
     background-color: tomato;
     cursor: pointer;
@@ -163,33 +157,45 @@ html {
     font-weight: 30px;
 }
 
+#header-mobile-menu {
+    display: none;
+}
 /* END HEADER SEARCH */
 
 /* START THE SLIDER */
-#slider {
-    /* position: relative; */
+#slider .img-slider{
+    position: relative;
+    /* display: block; */
+    box-sizing: border-box;
     padding-top: 35%;
     /* nếu giá trị phần trăm, tỉ lệ theo chiều ngang của chính nó */
-    background-color: rgb(241, 184, 184) ;
-    background: url('/assets/img/slider.jpg') center/ cover no-repeat ;
+    /* background-color: rgb(241, 184, 184) ; */
+    background: url("../img/slider.jpg") center/ cover no-repeat ;
 }
 
-#slider .text-content{
-    position: relative;
+ #slider .text-content{ 
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 20%;
+ }
     /* text-align: center; */
     /* Cách căn giữa */
-    width: 300px;
-    left: 30%;
-    bottom: 400px;
-    transform: translateX(-30%); 
+    /* width: 300px; */
+    /* transform: translateX(-30%);  */
     /* width: 70%; */
     /* background-color: rgba(0, 0, 0, 0.438); */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* left:0;
     Right:0; */
-}
+    /* display: inline-block; */
+/* } */ 
 
 #slider .text-content .text-heading{
+    /* position: absolute;
+    display: block;
+    top:20%;
+    left: 20%; */
     font-size: 30px;
     padding-bottom: 0px;
     /* text-shadow: 0px 0px 20px rgba(92, 88, 88, 0.6); */
@@ -200,7 +206,11 @@ html {
 }
 
 #slider .text-content .text-description{
+    /* position: absolute; */
     font-size: 20px;
+    /* top: 30%;
+    left: 20%;
+    display: block; */
     /* background-color: rgba(255, 99, 71, 0.397); */
     padding-bottom: 15px;
     color:rgb(40,40,40);
@@ -218,18 +228,21 @@ html {
 /*START THE CONTENT*/
 
 #content {
-
+    
 }
 
 /* START THE ABOUT SECTION */
 .section-content{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 70px 0px;
     text-align: center;
     margin-bottom: 35px;
     margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -296,6 +309,7 @@ html {
 #content .image .image-text{
     /* text-align: center; */
     padding: 15px 0px;
+    /* font-size: 16px */
     
 }
 
@@ -375,6 +389,7 @@ html {
     width: 33.33%;
     /* padding: 0 8px; */
     background-clip: content-box;
+    /* min-height: 400px; */
 
 }
 .place-img{
@@ -391,7 +406,7 @@ html {
 .place-content{
     background-color: white;
     padding: 25px 25px 30px 25px;
-    min-height: 400px;
+    min-height: 450px;
     position: relative;
     z-index: 0;
 }
@@ -571,12 +586,18 @@ html {
 
 .contact-content p{
     text-align: left;
-    font-size: 17px;;
+    font-size: 17px;
+    line-height: 35px;
 }
 
 .contact-content i[class*="ti-"]{
     width: 20px;
     padding: 5px;
+}
+
+.contact-info:hover{
+    color: blue;
+    opacity: 0.5;
 }
 
 form .column{
@@ -590,6 +611,12 @@ form .column{
     padding: 5px;
     border-radius: 8px solid;
     display: block;
+    
+}
+
+.message-contact-button{
+    padding-top: 0px;
+    
 }
 
 .contact-button{
@@ -604,6 +631,11 @@ form .column{
 
 .contact-button:hover{
     opacity: 0.8;
+}
+
+.contact-info{
+    text-decoration: none;
+    color: black;
 }
 
 /*ACTIVITY SECTION*/

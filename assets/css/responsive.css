@@ -1,0 +1,174 @@
+@media (min-width: 46.25em) and (max-width: 73.75em){
+    #content .image .image-text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 46.1875em) {
+
+    #main{
+        width: 100%; 
+        overflow: hidden; 
+    }
+
+    #header{
+        position: fixed;
+        height: 35px;
+    }
+    #nav{
+        display: block;
+        /* width: 100%; */
+    }
+    #nav > li {
+        display: block; 
+        /* margin-top: 50px; */
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav > li > a {
+        font-size: 25px;
+        line-height: 60px;
+        display: block;
+    }
+
+    #nav li .other{
+        position: relative;
+        background-color: rgb(41, 41, 41);
+    }
+
+    #nav li .other a {
+        color: white;
+        font-size: 25px;
+        line-height: 60px;
+        padding-left: 40px;
+        text-transform: uppercase;
+     
+    }
+
+    #nav .other :hover{
+        color:rgb(0, 0, 0);
+        background-color: white;
+    }
+
+    #header {
+        background-color: black;
+        height: 60px;
+        overflow: hidden;
+        /* height: 500px; */
+
+    }
+
+    #header-search{
+        display: none;
+    }
+
+    #header-mobile-menu {
+        position: absolute;
+        top:0;
+        right:0;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: block;
+        float: right;
+        
+    }
+
+    #slider .text-content{
+        left: 5%
+    }
+
+    #slider .img-slider{
+        height: 400px;
+    }
+    
+    #header-mobile-menu .mobile-menu {
+        float: right;
+        line-height: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+        
+        /* display: none; */
+    }
+
+    .mobile-menu:hover{
+        background-color: rgb(194, 194, 194);
+        color:rgb(0, 0, 0);
+    }
+    
+    #content .image-item{
+        /* float: none; */
+        width: 100%;
+    }
+
+    #content .image img{
+        width: 80%
+    }
+
+    .food-list .food {
+        width: 100%;
+        /* margin-left: 25%; */
+        /* -ms-transform: translate(-50%, -50%); */
+    }
+
+    .food-list .food-image{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%
+    }
+
+    .food-list .food-name-overlay{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%
+    }
+   
+    #destination .place-item{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #destination .place-button{
+        width: 90%;
+      
+    }
+    #destination .place-content{
+        min-height: 350px;
+    }
+
+    #activity .activity-img{
+        float:none;
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #activity .activity-content{
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    #activity .activity-heading{
+        text-align: center;
+    }
+
+    .r-full-column{
+        width: 100% !important;
+    }
+
+    .contact-info{
+        margin-left: 50px
+    }
+
+    .contact-button{
+        -webkit-appearance: none;
+        height: 35px;
+    }
+
+  
+
+}

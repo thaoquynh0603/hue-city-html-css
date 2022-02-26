@@ -13,8 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hue</title>
-    <link rel="icon" href="/assets/icon/page-icon.png" type="image/x-icon" />
-    <link rel='stylesheet' href='/assets/css/style.css'> 
+    <link rel="icon" href="assets/icon/page-icon.png" type="image/x-icon" />
+    <link rel='stylesheet' href='assets/css/style.css'> 
+    <link rel='stylesheet' href='assets/css/responsive.css'> 
     <link rel='stylesheet' href='assets/icon/themify-icons/themify-icons.css'>
 </head>
 
@@ -22,12 +23,7 @@
 <body>
     <div id="main">
 
-        <div id="slider">
-            <div class="text-content">
-                 <h1 class="text-heading"> The Imperial City </h1>
-                 <div class="text-description"> Stamp of History </div>
-             </div>
-         </div>
+        
 
         <div id="header">
             <!-- Begin Navigation -->
@@ -36,7 +32,7 @@
                 <li><a href="#destination">Destination</a></li>
                 <!-- <li><a href="#activity">Activity</a></li> -->
                 <li>
-                    <a href="">Other
+                    <a href="#">Other
                         <i class='hav-arrow-down ti-angle-down' style="font-size:14px"></i>
                     </a>
                     <ul class="other">
@@ -45,6 +41,10 @@
                         <!-- <li class = 'liother'><a href="#souvenir">Souvenir</a></li> -->
                     </ul>    
                 </li>
+
+                <div id='header-mobile-menu'>
+                    <i class='mobile-menu ti-menu'></i>
+                </div>
                 <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
             <!-- End Navigation -->
@@ -53,11 +53,20 @@
             <div id='header-search'>
                 <i class='search-button ti-search'></i>
             </div>
+
+           
             <!-- End Search-->
 
         </div>
         
-        
+        <div id="slider">
+        <div class="img-slider">
+            <div class="text-content">
+                 <h1 class="text-heading"> The Imperial City </h1>
+                 <div class="text-description"> Stamp of History </div>
+            </div>
+         </div>
+        </div>
 
         <div id="content">
             <!-- About introduction -->
@@ -69,17 +78,17 @@
                 <div class="image">
                     <div class="image-item">
                         <p class="image-text"> Savory but Elegant Cuisine</p>
-                        <img src="/assets/img/about/food.jpg" alt="Food" class="scene-img">
-                        <!-- <img src="/assets/img/about/destination.jpg" alt="Attraction" class="scene-img">
-                        <img src="/assets/img/about/activity.jpg" alt="Activity" class="scene-img"> -->
+                        <img src="assets/img/about/food.jpg" alt="Food" class="scene-img">
+                        <!-- <img src="assets/img/about/destination.jpg" alt="Attraction" class="scene-img">
+                        <img src="assets/img/about/activity.jpg" alt="Activity" class="scene-img"> -->
                     </div>
                     <div class="image-item">
                         <p class="image-text"> Ancient and Peaceful Destination</p>
-                        <img src="/assets/img/about/destination.jpg" alt="Destination" class="scene-img">
+                        <img src="assets/img/about/destination.jpg" alt="Destination" class="scene-img">
                     </div>
                     <div class="image-item">
                         <p class="image-text"> Unique Traditional Activity</p>
-                        <img src="/assets/img/about/activity.jpg" alt="Activity" class="scene-img">
+                        <img src="assets/img/about/activity.jpg" alt="Activity" class="scene-img">
                     </div>
                     <!-- <div class="clear horizon-content">
                         <img src="" alt="" class="activity-img clear">
@@ -110,30 +119,30 @@
                     <!-- Place -->
                     <div class="row place-list">
                         <div class="column place-item">
-                            <img src="/assets/img/destination/place-1.jpg" alt="Hue Imperial City" class="place-img">
+                            <img src="assets/img/destination/place-1.jpg" alt="Hue Imperial City" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading"> Hue Imperial City </h3>
                                 <p class="place-description"> Hue Imperial City, set along the northern bank of the Perfume River, features hundreds of monuments dating back to early 19th century, including the Forbidden Purple City, royal tombs, pagodas, temples, royal quarters, a library and museum </p>
                                 <p class="place-min-price"> The ticket price starts from 6.6 USD/ Person</p>
-                                <button class="place-button js-details"> More Details </button>
+                                <button class="place-button js-details col-full "> More Details </button>
                             </div>
                         </div>
                         <div class="column place-item">
-                            <img src="/assets/img/destination/place-2.jpg" alt="Hue Imperial City" class="place-img">
+                            <img src="assets/img/destination/place-2.jpg" alt="Hue Imperial City" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading"> Thien Mu Pagoda </h3>
                                 <p class="place-description"> Thien Mu Pagoda is set atop a hill just outside Hue City Centre, offering breathtaking views of Perfume River and Hue Imperial City. One of its standout features is a 21 metre-tall octagonal tower called Thap Phuoc Duyen, which was built in 1844 under the reign of Emperor Thieu Tri. </p>
                                 <p class="place-min-price"> Free Entrance</p>
-                                <button class="place-button js-details"> More Details </button>
+                                <button class="place-button js-details col-full"> More Details </button>
                             </div>
                         </div>
                         <div class="column place-item">
-                            <img src="/assets/img/destination/place-3.jpg" alt="Hue Imperial City" class="place-img">
+                            <img src="assets/img/destination/place-3.jpg" alt="Hue Imperial City" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading"> Tu Duc Tomb </h3>
                                 <p class="place-description">  Home to a massive lake and over 50 palaces, pavilions, temples and shrines, the Tu Duc Tomb offers relaxing ambience for visitors looking to experience the remnants of ancient Nguyen Dynasty. </p>
                                 <p class="place-min-price"> The ticket price starts from 5 USD/ An adult</p>
-                                <button class="place-button js-details"> More Details </button>
+                                <button class="place-button js-details col-full"> More Details </button>
                             </div>
                         </div>
                         <!-- Source: http://www.vietnam-guide.com/hue/top10/best-hue-attractions.htm -->
@@ -160,7 +169,7 @@
 
                     <div class="activity-main">
                         <div class="activity-content horizon-content clear">
-                            <img src="/assets/img/activity/activity_1.jpg" alt="Take in a Performance at the Royal Theatre" class="activity-img clear">
+                            <img src="assets/img/activity/activity_1.jpg" alt="Take in a Performance at the Royal Theatre" class="activity-img clear">
                             <div class="activity-content">
                                 <h3 class="activity-heading">
                                     Take in a Performance at the Royal Theatre
@@ -171,7 +180,7 @@
                             </div>
                         </div>
                         <div class="activity-content horizon-content clear">
-                            <img src="/assets/img/activity/activity_2.png" alt="Enjoy the Hue Festival" class="activity-img clear">
+                            <img src="assets/img/activity/activity_2.png" alt="Enjoy the Hue Festival" class="activity-img clear">
                             <div class="activity-content">
                                 <h3 class="activity-heading">
                                     Enjoy the Hue Festival
@@ -182,7 +191,7 @@
                             </div>
                         </div>
                         <div class="activity-content horizon-content clear">
-                            <img src="/assets/img/activity/activity_3.jpg" alt="Go on a Motorbike Tour" class="activity-img clear">
+                            <img src="assets/img/activity/activity_3.jpg" alt="Go on a Motorbike Tour" class="activity-img clear">
                             <div class="activity-content">
                                 <h3 class="activity-heading">
                                     Go on a Motorbike Tour
@@ -212,44 +221,56 @@
 
                     <div class="row food-list">
                         <div class="food column column-three">
-                            <img src="/assets/img/food/1-bun-bo.jpg" alt="Bun Bo (Beef Noodle)" class="food-image">
+                            <div class="food-container">
+                            <img src="assets/img/food/1-bun-bo.jpg" alt="Bun Bo (Beef Noodle)" class="food-image">
                             <div class="food-name-overlay">
                                 <p class="food-name-text"> Bun Bo (Beef Noodle) </p>
                             </div>
+                            </div>
                         </div>
 
                         <div class="food column column-three">
-                            <img src="/assets/img/food/2-banh-ep.jpg" alt="Banh Ep" class="food-image">
+                            <div class="food-container">
+                            <img src="assets/img/food/2-banh-ep.jpg" alt="Banh Ep" class="food-image">
                             <div class="food-name-overlay">
                                 <p class="food-name-text"> Banh Ep (Pressed Cake) </p>
                             </div>
-                        </div>
-
-                        <div class="food column column-three">
-                            <img src="/assets/img/food/3-bun-thit-nuong.jpg" alt="Bun thit nuong" class="food-image">
-                            <div class="food-name-overlay">
-                                <p class="food-name-text"> Bun Thit Nuong (Grilled Pork Noodle) </p>
                             </div>
                         </div>
 
                         <div class="food column column-three">
-                            <img src="/assets/img/food/4-banh-nam.jpg" alt="Banh Nam" class="food-image">
-                            <div class="food-name-overlay">
-                                <p class="food-name-text"> Banh Nam (Flat Steamed Rice Dumplings) </p>
+                            <div class="food-container">
+                                <img src="assets/img/food/3-bun-thit-nuong.jpg" alt="Bun thit nuong" class="food-image">
+                                <div class="food-name-overlay">
+                                    <p class="food-name-text"> Bun Thit Nuong (Grilled Pork Noodle) </p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="food column column-three">
-                            <img src="/assets/img/food/5-banh-beo-chen.jpg" alt="Banh Beo Chen" class="food-image">
-                            <div class="food-name-overlay">
-                                <p class="food-name-text"> Banh Beo Chen (Bloating Fern-shaped Cake) </p>
+                            <div class="food-container">
+                                <img src="assets/img/food/4-banh-nam.jpg" alt="Banh Nam" class="food-image">
+                                <div class="food-name-overlay">
+                                    <p class="food-name-text"> Banh Nam (Flat Steamed Rice Dumplings) </p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="food column column-three">
-                            <img src="/assets/img/food/6-bot-loc-heo-quay.jpg" alt="Che Bot loc Heo Quay" class="food-image">
-                            <div class="food-name-overlay">
-                                <p class="food-name-text"> Che Bot Loc Heo Quay (Sweet Soup with Grilled Pork Dumplings)</p>
+                            <div class="food-container">
+                                <img src="assets/img/food/5-banh-beo-chen.jpg" alt="Banh Beo Chen" class="food-image">
+                                <div class="food-name-overlay">
+                                    <p class="food-name-text"> Banh Beo Chen (Bloating Fern-shaped Cake) </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food column column-three">
+                            <div class="food-container">
+                                <img src="assets/img/food/6-bot-loc-heo-quay.jpg" alt="Che Bot loc Heo Quay" class="food-image">
+                                <div class="food-name-overlay">
+                                    <p class="food-name-text"> Che Bot Loc Heo Quay (Sweet Soup with Grilled Pork Dumplings)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,9 +322,42 @@
                 
             </div>   
          </div>  -->
+         <div class="section-content" id="contact">
+            <h2 class='section-heading-2'> Contact </h2>
+            <p class='section-sub-heading-2'> Love it? Let me know that </p>
+            <div class="row contact-content ">
+                <div class="column column-half r-full-column" >
+                    <p><a href="https://www.facebook.com/CityHue/" class="contact-info "><i class="ti-facebook"></i>Facebook</a></p>
+                    <p><a href="https://www.civitatis.com/en/hue/city-tour/" class="contact-info"><i class="ti-ticket"></i>Book a Trip</a></p>
+                </div>
+            
+
+                <div class="column column-half r-full-column">
+                    <form action="">
+                        <div class="row">
+                            <div class="column column-half r-full-column message-contact-button">
+                                <input type="text" class='form-control' required placeholder="Name" name="" id="">
+                            </div>
+                            <div class="column column-half r-full-column message-contact-button">
+                                <input type="email" class='form-control' required placeholder="Email" name="" id=""> 
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">    
+                            <div class="column column-full message-contact-button">
+                                <input type="text" class='form-control' required placeholder="Message" name="" id="">
+                            </div>
+                        </div>    
+                        <input type="submit" value="Send" class="contact-button r-full-column">  
+                    </form>  
+                </div>
+            </div>
+        </div>   
 
         <div class="map">
-            <img src="/assets/img/map/map.jpg" alt="map" class="map-image">
+            <img src="assets/img/map/map.jpg" alt="map" class="map-image">
         </div>
 
         <div class="modal js-modal">
@@ -388,5 +442,41 @@
             </p>
         </div>
     </div>
+
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('header-mobile-menu')
+        var headerHeight = header.clientHeight;
+
+        //Open-close menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //Close menu after chossing
+        var menuItems = document.querySelectorAll("#nav li a[href*='#']");
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            var test = menuItem.nextElementSibling
+            //console.log(menuItem)
+            console.log(test)
+            
+            //console.log(menuItem)
+
+            menuItem.onclick = function() {
+                var isParentMenu = this.nextElementSibling
+                if (isParentMenu) { 
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
