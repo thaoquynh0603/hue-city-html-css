@@ -3,4 +3,5 @@
 Skills learned:
 - HTML
 - CSS
+- Responsive
 - Front-end Web Development
